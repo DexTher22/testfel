@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sip</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Testtömegindex kalkulátor</h1>
+
+    <form id="form">
+      <label for="weight" class="form-label">Testtömeg</label>
+      <input type="text" id="weight" class="form-control">
+      <label for="height" class="form-label">Magasság</label>
+      <input type="text" id="height" class="form-control">
+      <button type="button" class="btn btn-success" id="calculate">Számít</button>
+    </form>
+
+    <table class="table table-striped">
+      <thead>
+        <th>Testtömegindex</th>
+        <th>Testsúlyosztályozás</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>< 16</td>
+          <td>Súlyos soványság</td>
+        </tr>
+        <tr>
+          <td>16 - 16,99</td>
+          <td>mérsékelt soványság</td>
+        </tr>
+        <tr>
+          <td>17 - 18,49</td>
+          <td>enyhe soványság</td>
+        </tr>
+        <tr>
+          <td>18,5 - 24,99</td>
+          <td>normális testsúly</td>
+        </tr>
+        <tr>
+          <td>25-29,99</td>
+          <td>Túlsúlyos</td>
+        </tr>
+        <tr>
+          <td>30 - 34,99</td>
+          <td>I. fokú elhízás</td>
+        </tr>
+        <tr>
+          <td>35 - 39,99</td>
+          <td>II. fokú elhízás</td>
+        </tr>
+        <tr>
+          <td>40 <=</td>
+          <td>III. fokú elhízás</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="bootstrap.js"></script>
+  <script src="app.js"></script>  
+</body>
+</html>
